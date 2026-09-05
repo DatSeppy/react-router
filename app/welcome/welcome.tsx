@@ -1,7 +1,7 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 import {useLoaderData} from "react-router";
-import {loader} from "~/routes/home";
+import type {loader} from "~/routes/home";
 
 export function Welcome() {
     const {text: welcomeText} = useLoaderData<typeof loader>()
